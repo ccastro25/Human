@@ -5,10 +5,10 @@ package castro.caonabo;
  */
 public class SuperHumans extends Humans {
 
-    enum goodORBad{GOOD,BAD}
-    String heroName;
-    String superAbility;
-    goodORBad vilianOrSuperHero;
+    private enum goodORBad{GOOD,BAD}
+    private String heroName;
+    private String superAbility;
+    private goodORBad vilianOrSuperHero;
 
     public goodORBad getVilianOrSuperHero() {
         return vilianOrSuperHero;
@@ -32,5 +32,13 @@ public class SuperHumans extends Humans {
 
     public void setSuperAbility(String superAbility) {
         this.superAbility = superAbility;
+    }
+
+    public void printSuperStuf(String print){
+
+
+
+
+        System.out.println(print);
     }
 }

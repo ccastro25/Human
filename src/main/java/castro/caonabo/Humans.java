@@ -4,17 +4,20 @@ package castro.caonabo;
  * Created by castro on 9/17/16.
  */
 public class Humans {
-    String name;
-    int age;
-    enum gender{MALE,FEMALE}
-    String occupation;
-    String address;
+
+
+    private String name;
+    private int age;
+    protected enum gender{MALE,FEMALE}
+    private String occupation;
+    private String address;
+    protected gender personGender;
 
     public gender getPersonGendr() {
         return personGendr;
     }
 
-    public void setPersonGendr(gender personGendr) {
+    public void setPersonGendr(gender gender) {
         this.personGendr = personGendr;
     }
 
@@ -55,7 +58,7 @@ public class Humans {
     public void printInfo(){
 
 
-        System.out.print(" The name: "+this.name +" the age is: "+ this.age + " there gender is: " + this.personGendr +" " +
+        System.out.println(" The name: "+this.name +" the age is: "+ this.age + " there gender is: " + this.personGendr +" " +
                 " the occupation is:  "+ this.occupation + " and the addres is "+ address);
     }
 }
